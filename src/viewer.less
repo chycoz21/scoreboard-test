@@ -1,0 +1,78 @@
+body {
+  color: white;
+  background: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 14vw;
+  overflow: hidden;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.name {
+  font-size: 0.4em;
+
+  .team {
+    width: 49%;
+    float: left;
+    overflow: hidden;
+    //text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .hidden {
+      display: none;
+    }
+  }
+  .team_a {
+    text-align: right
+  }
+  .team_b {
+  }
+}
+
+.score_row {
+  margin-top: 0.5ex;
+  white-space: nowrap;
+  overflow: visible;
+  div {
+    display: inline-block;
+  }
+
+  .home_away {
+    font-size: .9em;
+    width: 2.35em;
+    text-align: right;
+  }
+
+  .score_container {
+    width: 1.5em;
+    text-align: right;
+  }
+
+  .score {
+    padding-left: 0.1em;
+    margin-top: 0.1em;
+    padding-right: 0.075em;
+  }
+
+  &.team_a {
+    color: #FF7F26;
+  }
+
+  &.team_b {
+    color: #23B14D;
+  }
+
+  &.team_a .highlight {
+    color: black;
+    background-color: #FF7F26;
+  }
+
+  &.team_b .highlight {
+    color: black;
+    background-color: #23B14D;
+  }
+
+}
